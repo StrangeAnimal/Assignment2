@@ -36,6 +36,12 @@ while(loop ==1){
     if(p ==0 && i>0 && r>0) loop =0;  //check that one of the values is 0 if not loop
     if(i ==0 && p>0 && r>0) loop =0;  //only one must be zero to prevent x/0 errors
     if(r ==0 && i>0 && p>0) loop =0;
+	
+	if(!((p ==0 && i>0 && r>0)||(i ==0 && p>0 && r>0)||(r ==0 && i>0 && p>0))){
+	
+	printf("Error please re enter the values\n");
+	
+	}
 }
 
 if(p==0){
